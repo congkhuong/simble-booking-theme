@@ -1,0 +1,210 @@
+@import "./global.scss";
+.schedules-detail{
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+	.header-shchedule{
+		border-bottom: 1px solid $border;
+		padding: 30px 30px 20px;
+		&:after{
+			@include after();
+		}
+		a{
+			display: block;
+			float: left;
+			margin:0 20px;
+			padding: 10px;
+			font-family: 'HelveticaNeue';
+			font-size: 13px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			cursor: pointer;
+			color: $dark!important;
+			width: 110px;
+			text-align: center;
+		}
+		.active{
+			color: #fff!important;
+			border-radius: 3px;
+			background: $blue;
+			transition: all ease .2s;
+			border: 1px solid $blue;
+			margin-bottom: 10px;
+			&:hover{
+				color:$blue!important;
+				background: #fff;
+			}
+			&:active{
+				color:$blue!important;
+				background: #fff;
+			}
+			&:focus{
+				color:$blue!important;
+				background: #fff;
+			}
+		}
+		.form-group{
+			width: 155px;
+			float: right;
+		}
+	}/*header END*/
+}
+
+.schedule-row{
+	padding: 50px;
+	border-bottom: 1px solid $border;
+	&:last-child{
+		border-bottom: none;
+	}
+	b, h6{
+		font-family: $helf;
+		font-size: 14px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		color: #3a3a3a;
+		padding-bottom: 5px;
+	}
+	h6{
+		font-size: 22px;
+		margin: 0;
+		padding: 0;
+		font-family: $helfB;
+		font-weight: 700;
+	}
+	span{
+		display: block;
+		font-family: $helf;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.71;
+		color: #3a3a3a;
+	}
+	p{
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.71;
+		color: #9c9c9c;
+		float: left;
+		margin-right: 40px;
+		i{
+			margin-right: 10px;
+			color: #9c9c9c;
+			font-size: 18px;
+			margin-bottom: -3px;
+		}
+	}
+	h4{
+		font-family: $helfB;
+		font-size: 16px;
+		font-weight: bold;
+		color: #5d5d5d;
+	}
+	img{
+		display: block;
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		border-radius: 50%;
+	}		
+	.date, .time, .pic{
+		float: left;
+		width: 30%;
+	}
+	.time{
+		width: 45%;
+	}
+	.pic{
+		width: 25%;
+	}
+	.col-md-6{
+		position: relative;
+	}
+	.book{
+		font-family: $helf;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		text-align: center;
+		color: #3ad2d2;
+		padding: 10px 15px;
+		display: inline-block;
+		border-radius: 3px;
+		border: solid 1px #3ad2d2;
+		position: absolute;
+		top: 2px;
+		right: -20px;
+		transition: all ease .2s;
+		&:hover{
+			color:#fff!important;
+			background: #3ad2d2;
+		}
+		&:active{
+			color:#fff!important;
+			background: #3ad2d2;
+		}
+		&:focus{
+			color:#fff!important;
+			background: #3ad2d2;
+		}
+	}
+}/*schedule-row  END*/
+
+@media(max-width: 993px){
+	.schedule-row .date, .schedule-row .pic, .schedule-row .time{
+		width: 100%;
+		img{
+			float:left;
+			margin-bottom: 20px;
+		}
+	}
+	.schedule-row p{
+		margin-right: 0;
+	}
+	.schedule-row{
+		padding: 20px;
+	}
+	.schedules-detail .header-shchedule{
+		padding: 20px;
+	}
+	.schedules-detail .header-shchedule span{
+		float: none;
+		margin: 0 auto 10px;
+	}
+	.schedules-detail .header-shchedule .form-group{
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 768px){
+	.schedule-row .book{
+		position: static;
+		width: 90%;
+	}
+	.schedule-row{
+		text-align: center;
+	}
+	.schedule-row p{
+		float: none;
+	}
+	.schedule-row .pic{
+		float: none;
+		display: block;
+		width: 100%;
+		img{
+			float: none;
+		}
+	}
+	.schedule-row .col-md-6{
+		overflow: hidden;
+	}
+	.schedules-detail .header-shchedule .form-group{
+		display: block;
+		width: 90%;
+		margin-bottom: 5px;
+	}
+}

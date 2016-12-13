@@ -1,0 +1,516 @@
+/*---------GLOBAL----VARS-------------*/
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueMed.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeuBold.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueLight.ttf"); }
+
+/*
+mixins
+*/
+/*--------GLOBAL-----VARS-------------*/
+section {
+  padding: 0;
+  margin: 0; }
+
+.form-for-content {
+  display: none; }
+
+.signup {
+  /*
+	reset
+	*/
+  /*
+	reset
+	*/ }
+  .signup h4, .signup h6, .signup p, .signup b, .signup ul, .signup li, .signup span, .signup b, .signup i {
+    padding: 0;
+    margin: 0; }
+  .signup .sidebar-in, .signup .content-signup {
+    background: #fff; }
+  .signup .sidebar-in {
+    padding: 30px 20px;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    box-sizing: border-box; }
+    .signup .sidebar-in h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #33cccc; }
+    .signup .sidebar-in h6, .signup .sidebar-in .session {
+      padding: 15px 0 10px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      color: #565a5c; }
+    .signup .sidebar-in p {
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #5f5f5f; }
+    .signup .sidebar-in b {
+      float: right;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      color: #565a5c; }
+    .signup .sidebar-in .session, .signup .sidebar-in .total {
+      overflow: hidden;
+      border-top: 1px solid #ddd; }
+    .signup .sidebar-in .session {
+      text-transform: none;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 13px;
+      padding-bottom: 15px; }
+    .signup .sidebar-in .total {
+      font-weight: 700;
+      font-size: 12px; }
+      .signup .sidebar-in .total b {
+        color: #33cccc;
+        font-size: 16px;
+        font-weight: 700; }
+  .signup .avatar-preview {
+    display: none;
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd; }
+
+.content-signup .row {
+  background: #fff; }
+
+/*
+header-payment
+*/
+.header-payment {
+  border-radius: 5px 5px 0 0; }
+  .header-payment p {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #565a5c;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer; }
+    .header-payment p:last-child {
+      border-right: none; }
+  .header-payment i {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -1px;
+    font-size: 25px;
+    font-weight: 100;
+    color: #ddd; }
+  .header-payment .active {
+    color: #33cccc; }
+    .header-payment .active i {
+      color: #33cccc; }
+  .header-payment .disable {
+    background: #f9f9f9;
+    color: #b9b9b9; }
+
+/*
+content-review
+*/
+.content-review {
+  padding: 0 60px;
+  box-sizing: border-box;
+  /*
+	quick-login
+	*/
+  /*
+	credit-info
+	*/ }
+  .content-review h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #565a5c;
+    padding: 45px 0 25px; }
+  .content-review h3, .content-review p {
+    text-align: center; }
+  .content-review h3 {
+    margin: 0;
+    margin-top: 35px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-transform: none; }
+  .content-review p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding-bottom: 10px; }
+  .content-review hr {
+    border-color: #ddd;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+  .content-review .payment-method {
+    margin-top: 45px;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: 700; }
+  .content-review .col-part {
+    float: left;
+    width: 50%;
+    height: auto; }
+    .content-review .col-part:last-child {
+      text-align: right; }
+  .content-review .heaer-b {
+    padding: 0 45px; }
+    .content-review .heaer-b:after {
+      content: ".";
+      clear: both;
+      font-size: 0;
+      width: 100%;
+      display: block;
+      height: 0; }
+  .content-review .col-part:first-child h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #565a5c;
+    padding-bottom: 15px;
+    font-family: Helvetica, Arial, sans-serif; }
+    .content-review .col-part:first-child h4:before {
+      content: '';
+      display: inline-block;
+      float: left;
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-top: -9px;
+      width: 20px;
+      height: 27px;
+      background: url(../img/booking2.png) 0 0 no-repeat; }
+  .content-review .col-part:first-child p {
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif; }
+  .content-review .col-part:last-child h4 {
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #33cccc;
+    font-family: Helvetica, Arial, sans-serif; }
+  .content-review .col-part:last-child label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #565a5c; }
+  .content-review .col-part a {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #5f5f5f !important; }
+    .content-review .col-part a:before {
+      content: "";
+      width: 14px;
+      height: 16px;
+      display: inline-block;
+      margin-right: 4px;
+      vertical-align: middle;
+      background: url(../img/Recurring.png) 0 0 no-repeat; }
+  .content-review .session-block {
+    background: #eee;
+    padding: 45px 0;
+    box-sizing: border-box;
+    margin-bottom: 20px; }
+    .content-review .session-block .row {
+      padding-top: 40px; }
+  .content-review .row {
+    background: transparent;
+    padding: 0 30px; }
+  .content-review .form-group {
+    margin-bottom: 20px;
+    overflow: hidden; }
+    .content-review .form-group label {
+      text-align: right;
+      padding-top: 8px;
+      text-transform: none;
+      font-size: 14px;
+      font-weight: 400;
+      color: #565a5c; }
+  .content-review .checkbox, .content-review .radio {
+    margin: 0; }
+  .content-review .footer-text {
+    padding: 60px 0 0 0; }
+    .content-review .footer-text p {
+      font-size: 12px;
+      font-weight: 700;
+      color: #565a5c; }
+    .content-review .footer-text label {
+      display: block;
+      text-align: center; }
+  .content-review .over-text {
+    width: 100%;
+    height: 150px;
+    overflow-y: auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px; }
+    .content-review .over-text p {
+      text-align: left;
+      font-size: 14px;
+      font-weight: 100;
+      color: #565a5c;
+      font-family: Helvetica, Arial, sans-serif; }
+  .content-review .btns {
+    width: 320px;
+    padding-bottom: 60px;
+    margin: 40px auto 0;
+    display: block; }
+    .content-review .btns .btn {
+      padding: 10px 40px !important; }
+  .content-review .form-group .row {
+    margin: 0 -15px;
+    padding: 0; }
+  .content-review .form-group span {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(137, 139, 142, 0.66); }
+  .content-review .form-group .different {
+    padding-top: 29px; }
+  .content-review input[type="file"] {
+    display: none; }
+  .content-review .avatar-signup {
+    border: 2px dashed #d5d6d8;
+    display: inline-block;
+    width: 105px;
+    padding: 8px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #d5d6d8 !important;
+    box-sizing: border-box; }
+    .content-review .avatar-signup i {
+      display: block;
+      text-align: center;
+      font-size: 40px;
+      color: #d5d6d8;
+      margin-bottom: 10px; }
+  .content-review .text {
+    text-align: left;
+    padding-top: 40px; }
+    .content-review .text h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #565a5c;
+      padding-bottom: 10px;
+      text-transform: none; }
+    .content-review .text p {
+      font-size: 13px;
+      font-weight: 400;
+      color: #565a5c;
+      text-align: left;
+      padding-bottom: 5px;
+      font-family: Helvetica, Arial, sans-serif; }
+  .content-review .quick-login {
+    margin: 50px 0 70px;
+    background: #eee;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    text-align: left; }
+    .content-review .quick-login h6 {
+      padding-bottom: 10px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 14px; }
+    .content-review .quick-login p {
+      text-align: left;
+      padding-bottom: 5px; }
+    .content-review .quick-login a {
+      display: inline-block;
+      float: left;
+      border-radius: 5px;
+      padding: 11px 0;
+      width: 210px;
+      color: #fff !important;
+      background: #5972a5;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: Helvetica, Arial, sans-serif;
+      margin-right: 20px;
+      margin-bottom: 10px; }
+    .content-review .quick-login i {
+      vertical-align: middle;
+      font-size: 18px;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 15px; }
+    .content-review .quick-login .google {
+      background: #da5a4a; }
+  .content-review .social {
+    margin-top: 15px;
+    overflow: hidden; }
+  .content-review .members-signup img {
+    display: block;
+    margin: 0 auto 20px; }
+  .content-review .members-signup a {
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-align: center; }
+  .content-review .continue {
+    text-align: center;
+    width: auto; }
+  .content-review .checkout-title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .content-review .credit-card, .content-review .credit-info {
+    margin-top: 40px;
+    padding: 40px; }
+    .content-review .credit-card h4, .content-review .credit-info h4 {
+      margin-bottom: 20px;
+      text-align: center; }
+    .content-review .credit-card .row, .content-review .credit-info .row {
+      padding-top: 10px; }
+  .content-review .credit-info h4 {
+    margin-top: 0;
+    text-align: left; }
+  .content-review .card-block {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px; }
+    .content-review .card-block .header {
+      padding: 20px 20px 30px;
+      box-sizing: border-box; }
+    .content-review .card-block h5 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #565a5c;
+      padding-bottom: 10px;
+      font-family: Helvetica, Arial, sans-serif; }
+      .content-review .card-block h5:after {
+        content: ".";
+        clear: both;
+        font-size: 0;
+        width: 100%;
+        display: block;
+        height: 0; }
+      .content-review .card-block h5 img {
+        float: right;
+        margin-top: -15px;
+        display: block;
+        width: 60px;
+        height: 40px; }
+    .content-review .card-block span {
+      display: block;
+      font-size: 15px;
+      font-weight: 400;
+      color: #cac7c7; }
+    .content-review .card-block a {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      color: #33cccc;
+      text-align: center;
+      padding: 13px 0;
+      background: #eee; }
+  .content-review .form-group label {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #5f5f5f; }
+  .content-review label.email-label {
+    padding-top: 35px !important; }
+  .content-review label.second-label {
+    padding-bottom: 5px; }
+
+/*
+*
+*
+MEDIAS
+*
+*
+*/
+@media (max-width: 768px) {
+  .content-review .col-part {
+    width: 100%; }
+  .content-review {
+    padding: 0 15px; }
+  .content-signup .row, .signup .content-signup, .signup .sidebar-in {
+    margin: 0; }
+  .sidebar-simblebookign {
+    margin-bottom: 50px; }
+  .content-review .heaer-b, .content-review .row {
+    padding: 0; }
+  .content-review .row {
+    padding-top: 20px; }
+  .header-payment p {
+    border-right: none;
+    background: #fff; }
+  .header-payment {
+    background: #f9f9f9 !important; }
+    .header-payment p.col-md-4 {
+      width: 33%;
+      float: left; }
+  .content-review h2 {
+    padding: 10px 0; }
+  .content-review .session-block {
+    padding: 45px 10px; }
+  .content-review .col-part {
+    text-align: center; }
+    .content-review .col-part h4, .content-review .col-part p, .content-review .col-part label {
+      text-align: center;
+      padding-left: 0;
+      display: block; }
+  .content-review .btns {
+    width: auto;
+    text-align: center; }
+    .content-review .btns .btn {
+      margin-bottom: 10px; } }
+
+@media (max-width: 767px) {
+  .content-review .col-part:last-child h4, .content-review .col-part:last-child label, .content-review .col-part:last-child a {
+    padding-left: 30px;
+    text-align: left; }
+  .content-review .footer-text {
+    padding: 20px 0 0; }
+  .content-review .form-group .different {
+    padding-top: 0;
+    width: 100%;
+    text-align: center; }
+  .content-review .form-group {
+    margin-bottom: 10px; }
+  .content-review .col-part:first-child h4 {
+    padding-bottom: 3px;
+    text-align: left; }
+  .content-review .form-group label {
+    width: 90%;
+    display: block;
+    margin: 0 auto 5px;
+    float: none;
+    text-align: center; }
+  .signup .avatar-preview {
+    margin: 5px auto;
+    float: none; }
+  .signup .avatar-preview {
+    width: 100%; }
+  .content-review .btns .btn {
+    width: 90%; } }
+
+@media (max-width: 480px) {
+  .content-review .card-block {
+    width: auto; }
+  .content-review .credit-card, .content-review .credit-info {
+    padding: 20px; }
+  .content-review .card-block h5 img {
+    display: block;
+    float: none;
+    margin: 0 auto; }
+  .content-review .card-block h5 {
+    line-height: 30px; } }

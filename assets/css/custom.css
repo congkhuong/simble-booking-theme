@@ -1,0 +1,464 @@
+/*---------GLOBAL----VARS-------------*/
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueMed.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeuBold.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueLight.ttf"); }
+
+/*
+mixins
+*/
+/*--------GLOBAL-----VARS-------------*/
+section {
+  padding: 0;
+  margin: 0; }
+
+body .navbar-dark {
+  background: #2b333d; }
+
+.navbar-dark ul.nav.navbar-nav li a {
+  color: #fff; }
+
+/*button*/
+body .navbar-dark .button:hover {
+  background: #40cad2; }
+
+body .navbar-dark .button:active {
+  background: #40cad2; }
+
+body .navbar-dark .button:focus {
+  background: #40cad2; }
+
+body .navbar-dark .button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #3fb9c1;
+  border-color: #3baeb6;
+  font-family: "Verdana";
+  text-transform: uppercase;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+  padding: 11px 22.5px;
+  font-size: 11px;
+  line-height: 1.5;
+  border-radius: 2px;
+  outline: none !important;
+  -webkit-box-shadow: 1px 3px 0px #32959b;
+  box-shadow: 1px 3px 0px #32959b; }
+
+/*bookingkings*/
+.navigation {
+  padding: 10px 0; }
+
+.listingImage .brand-title {
+  left: 30px !important; }
+
+/*breadrums*/
+.breadcrumb > li + li:before {
+  content: "" !important;
+  width: 6px;
+  height: 12px;
+  margin-right: 6px;
+  margin-top: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/bread.svg) 0 0 no-repeat; }
+
+.breadcrumb {
+  margin: 0 -15px 20px; }
+  .breadcrumb a {
+    font-size: 14px;
+    margin: 0 7px; }
+
+.breadcrumb li:first-child a {
+  margin-left: 0; }
+
+ol.breadcrumb {
+  padding-top: 30px; }
+
+html body .btn-danger {
+  -webkit-box-shadow: 1px 3px 0px #a90b0b !important;
+  box-shadow: 1px 3px 0px #a90b0b !important;
+  color: #fff !important;
+  background-color: #d90e0e !important;
+  border-color: #cb0d0d !important;
+  font-family: "Montserrat", Georgia, "Times New Roman", Times, serif !important;
+  text-transform: uppercase !important;
+  margin-bottom: 5px !important;
+  padding: 11px 22.5px !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  border-radius: 2px !important;
+  outline: none !important;
+  display: inline-block !important;
+  margin-bottom: 0 !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  white-space: nowrap !important;
+  padding: 10px 15px !important;
+  font-size: 13px !important;
+  line-height: 1.42857 !important;
+  border-radius: 3px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+  html body .btn-danger:hover {
+    -webkit-box-shadow: 1px 3px 0px #a90b0b !important;
+    box-shadow: 1px 3px 0px #a90b0b !important;
+    color: #fff !important;
+    background-color: #d90e0e !important;
+    border-color: #cb0d0d !important; }
+  html body .btn-danger:active {
+    -webkit-box-shadow: 1px 3px 0px #a90b0b !important;
+    box-shadow: 1px 3px 0px #a90b0b !important;
+    color: #fff !important;
+    background-color: #d90e0e !important;
+    border-color: #cb0d0d !important; }
+  html body .btn-danger:focus {
+    -webkit-box-shadow: 1px 3px 0px #a90b0b !important;
+    box-shadow: 1px 3px 0px #a90b0b !important;
+    color: #fff !important;
+    background-color: #d90e0e !important;
+    border-color: #cb0d0d !important; }
+
+/*************************
+        THEMES
+*************************/
+html body {
+  /*
+    btn-transparent
+    */
+  /*btn-transparent*/ }
+  html body .btn-info {
+    text-shadow: none !important;
+    -webkit-box-shadow: 1px 3px 0px #32959b !important;
+    box-shadow: 1px 3px 0px #32959b !important;
+    background-color: #3fb9c1 !important;
+    border-color: #3baeb6 !important;
+    font-family: "Montserrat", Georgia, "Times New Roman", Times, serif !important;
+    text-transform: uppercase !important;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+    -webkit-text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 5px !important;
+    padding: 11px 22.5px !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    border-radius: 2px !important;
+    outline: none !important;
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    touch-action: manipulation !important;
+    cursor: pointer !important;
+    background-image: none !important;
+    border: 1px solid transparent !important;
+    white-space: nowrap !important;
+    padding: 10px 15px !important;
+    font-size: 13px !important;
+    line-height: 1.42857 !important;
+    border-radius: 4px !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    color: #fff !important; }
+  html body .btn-info:hover {
+    background-color: #39a6ad !important;
+    border-color: #3fb9c1 !important;
+    color: #fff !important; }
+  html body .btn-info:active {
+    background-color: #39a6ad !important;
+    border-color: #3fb9c1 !important;
+    color: #fff !important; }
+  html body .btn-info:focus {
+    background-color: #39a6ad !important;
+    border-color: #3fb9c1 !important;
+    color: #fff !important; }
+  html body .btn-transparent {
+    background: transparent !important;
+    border-color: #3fb9c1 !important;
+    color: #3fb9c1 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  html body .btn-transparent:hover {
+    color: #fff !important;
+    background: #3fb9c1 !important; }
+  html body .btn-transparent:active {
+    color: #fff !important;
+    background: #3fb9c1 !important; }
+  html body .btn-transparent:focus {
+    color: #fff !important;
+    background: #3fb9c1 !important; }
+  html body .login-signup {
+    font-weight: 100;
+    float: right; }
+
+.pink {
+  color: #3fb9c1; }
+
+body a, .listingImage .tagline li a {
+  color: #3fb9c1 !important; }
+
+body a:hover, .listingImage .tagline li a:hover {
+  color: #101213 !important; }
+
+body a:active, .listingImage .tagline li a:active {
+  color: #101213 !important; }
+
+body a:focus, .listingImage .tagline li a:focus {
+  color: #101213 !important; }
+
+.classTitle .webpage-title a {
+  color: #fff !important; }
+
+#center-list .infoSection > .center-title span {
+  color: #bebebe; }
+
+.listItem .listItemLegend a {
+  color: #979797 !important; }
+  .listItem .listItemLegend a:hover {
+    color: #333 !important; }
+  .listItem .listItemLegend a:active {
+    color: #333 !important; }
+  .listItem .listItemLegend a:focus {
+    color: #333 !important; }
+
+.listItem .listItemLegend .readmore a {
+  color: #33cccc !important; }
+
+.listItem .listItemDetails span.section, .listItem .listItemDetails h2.h5 strong {
+  color: #979797; }
+
+.listItem .listItemDetails .item-title a {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 600; }
+
+#sidebar .classCard a {
+  width: 100%;
+  display: block; }
+
+/*
+-------*
+------navigation-->
+-------*
+*/
+nav.navbar {
+  padding-bottom: 0 !important;
+  height: 85px; }
+  nav.navbar a {
+    float: right;
+    display: block; }
+  nav.navbar .navigation {
+    padding: 0; }
+  nav.navbar .login-signup {
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    color: #3fb9c1;
+    text-shadow: none !important; }
+  nav.navbar .logo {
+    float: left; }
+  nav.navbar .nav-booking, nav.navbar .nav-schedule, nav.navbar .nav-membership {
+    display: block;
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+    height: 100%;
+    position: relative;
+    padding: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5F5F5F !important; }
+    nav.navbar .nav-booking:after, nav.navbar .nav-schedule:after, nav.navbar .nav-membership:after {
+      content: '';
+      display: block;
+      float: right;
+      vertical-align: middle;
+      margin: 0 0 0 8px;
+      width: 20px;
+      height: 20px;
+      background: url(../img/booking.png) 0 0 no-repeat; }
+    nav.navbar .nav-booking i, nav.navbar .nav-schedule i, nav.navbar .nav-membership i {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      display: block;
+      border-radius: 50%;
+      font-style: normal;
+      text-align: center;
+      border: 2px solid #33cccc;
+      background: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      color: #33cccc; }
+  nav.navbar .nav-schedule, nav.navbar .nav-membership {
+    border-right: none; }
+    nav.navbar .nav-schedule:after, nav.navbar .nav-membership:after {
+      background: url(../img/schedules.png) 0 0 no-repeat; }
+  nav.navbar .nav-membership:after {
+    background: url(../img/membership.png) 0 0 no-repeat; }
+  nav.navbar .nav-parent {
+    position: relative;
+    float: right;
+    display: inline-block; }
+    nav.navbar .nav-parent p {
+      position: absolute;
+      top: 75%;
+      width: 170px;
+      z-index: 10;
+      right: 0;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 10px 0;
+      display: none; }
+      nav.navbar .nav-parent p i {
+        float: right; }
+      nav.navbar .nav-parent p a {
+        display: block;
+        font-size: 13px;
+        color: #565a5c !important;
+        padding: 8px 16px;
+        float: none;
+        font-weight: 400;
+        transition: all ease .3s;
+        text-transform: uppercase; }
+        nav.navbar .nav-parent p a:last-child {
+          margin-top: 5px;
+          border-top: 1px solid #eee; }
+        nav.navbar .nav-parent p a:hover {
+          background: #33cccc;
+          color: #fff !important;
+          text-indent: 5px; }
+          nav.navbar .nav-parent p a:hover i {
+            color: #fff; }
+        nav.navbar .nav-parent p a:active {
+          background: #33cccc;
+          color: #fff !important;
+          text-indent: 5px; }
+          nav.navbar .nav-parent p a:active i {
+            color: #fff; }
+        nav.navbar .nav-parent p a:focus {
+          background: #33cccc;
+          color: #fff !important;
+          text-indent: 5px; }
+          nav.navbar .nav-parent p a:focus i {
+            color: #fff; }
+  nav.navbar .nav-user {
+    padding: 20px 0 20px 50px;
+    position: relative;
+    display: inline-block; }
+    nav.navbar .nav-user img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+    nav.navbar .nav-user i {
+      float: right;
+      margin-top: 14px;
+      margin-left: 10px; }
+
+/*
+-------*
+------calendar-->
+-------*
+*/
+.datepicker .datepicker-switch {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5f5f5f; }
+
+.datepicker table tr th {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #32959b; }
+
+.datepicker.dropdown-menu td {
+  padding: 6px 11px; }
+
+.datepicker table tr td.disabled {
+  font-size: 12px;
+  color: #ddd; }
+
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active {
+  background: #3fb9c1 !important; }
+
+.datepicker .next, .datepicker .prev {
+  font-size: 14px;
+  color: #32959b; }
+
+/*loader*/
+.modal-ajax {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9) url("http://www.smartpropertyinvestment.com.au/templates/spbase/images/preloader.gif") 50% 50% no-repeat; }
+
+@media (max-width: 768px) {
+  nav.navbar {
+    height: auto; }
+  .menu {
+    display: none; } }
+
+/*alerts*/
+body .alert-success, .alert-error {
+  background-color: #d9efef;
+  color: #31708f;
+  border-left: 3px solid #3c763d;
+  border-radius: 0px;
+  background-image: none !important;
+  padding: 10px;
+  border-color: #33cccc; }
+  body .alert-success .close, .alert-error .close {
+    margin-top: -5px; }
+
+body .alert-error {
+  background-color: #ffecec;
+  color: #a94442;
+  border-left: 3px solid #cc3333;
+  border-radius: 0px;
+  padding: 10px; }

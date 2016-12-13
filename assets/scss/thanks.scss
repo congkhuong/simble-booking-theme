@@ -1,0 +1,97 @@
+@import "./global.scss";
+
+.thanks{
+	padding: 60px 40px 80px;
+	/*
+	reset
+	*/ 
+	h4, h6, p, b, ul, li, span, b, i,
+	{
+		padding: 0;
+		margin: 0;
+	}
+	/*
+	reset
+	*/
+	h3, p{
+		text-align: center;
+	}
+	h3, h4{
+		@include fontC(400, 16px, $blue);
+		text-transform: uppercase;
+	}
+	h3{
+		font-weight: 700;
+		padding-bottom: 10px;
+	}
+	h4{
+		text-transform: none;
+		color: $dark;
+		font-family: $helfB;
+		font-weight: 700;
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	p{
+		@include fontC(400, 13px, $dark);
+		padding-bottom: 60px;
+		font-family: $helf;
+	}
+	b{
+		@include fontC(700, 13px, $dark);
+		display: block;
+	}
+	span{
+		display: inline-block;
+		padding-bottom: 15px;
+		@include fontC(400, 13px, $dark);
+	}
+	.pic{
+		display: block;
+		float: left;
+		img{
+			display: block;
+			@include wh(200px, auto);
+			min-height: 160px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			@include br(3px);
+		}
+	}
+	.social{
+		padding-top: 20px;
+		overflow: hidden;
+		a{
+			float: left;
+			display: block;
+			margin: 0 6px 10px 0;
+			@include wh(70px, 35px);
+			background: #5972a5;
+			@include br(3px);
+			@include bx();
+			padding-top: 10px;
+		}
+		.twitter{
+			background: #78b6e0;
+		}
+		.message{
+			background: #757575;
+		}
+		i{
+			font-size: 16px;
+			color: #fff;
+		}
+	}
+}
+
+/*
+medias
+*/
+@media(max-width: 768px){
+	.thanks{
+		padding: 20px;
+		p{
+			padding-bottom: 30px;
+		}
+	}
+}

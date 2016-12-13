@@ -1,0 +1,104 @@
+@import "./global.scss";
+body{
+#tickets{
+	.ticket{
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+		background: #fff;
+		position: relative;
+		padding: 30px 30px 30px 140px;
+		.cut{
+			border-right: solid 1px #e2e2e2;
+			padding-left: 0;
+		}
+	}
+	h6{
+		position: absolute;
+		top:30px;
+		right: 25px;
+		display: inline-block;
+		font-family: $helf;
+		font-size: 12px;
+		font-weight: 400;
+		cursor: pointer;
+		margin: 0;
+		font-style: normal;
+		color: #d5d5d5;
+		i{
+			font-size: 14px;
+		}
+	}
+	label{
+		color: $blue!important;
+		font-size: 13px;
+		font-weight: 700;
+		display: block;
+		width: 100%;
+		font-family: $helfB;
+	}
+	h3{
+		font-family: $helfB;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	b{
+		display: block;
+		font-weight: 700;
+		font-size: 14px;
+		font-family: $helfB;
+		padding-bottom: 8px;
+	}
+	b.total{
+		font-size: 26px;
+		color: $blue;
+	}
+	span{
+		font-family: $helf;
+		font-size: 12px;
+		padding-bottom: 8px;
+		font-weight: normal;
+		color: #5f5f5f;
+		padding-left: 22px;
+		display: block;
+	}
+	.price-ticket{
+		padding-left: 0;
+	}
+	.fa{
+		font-size: 16px;
+		margin-right: 5px;
+	}
+	.ticket-icon{
+		width: 15px;
+		margin-bottom: -2px;
+		height: 15px;
+		margin-right: 5px;
+		display: inline-block;
+		background: url(../img/ticket.svg);
+	}
+	.row{
+		&:first-child{
+			margin-bottom: 20px;
+		}
+	}
+	.detail-wrapper .row{
+		margin-top: 60px;
+		label{
+			padding-left: 15px;
+			padding-bottom: 15px;
+		}
+	}
+	.detail-wrapper{
+		display: none;
+	}
+}/*tickets END*/
+
+}/*body END*/
+
+@media(max-width: 769px){
+	body #tickets .ticket{
+		padding-left: 15px;
+	}
+	body #tickets .ticket .cut{
+		display: none;
+	}
+}

@@ -1,0 +1,326 @@
+/*---------GLOBAL----VARS-------------*/
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueMed.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeuBold.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueLight.ttf"); }
+
+/*
+mixins
+*/
+/*--------GLOBAL-----VARS-------------*/
+section {
+  padding: 0;
+  margin: 0; }
+
+.member-emty-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 60px 0 80px; }
+  .member-emty-header img {
+    display: block;
+    margin: 0 auto 15px; }
+  .member-emty-header h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #9c9c9c; }
+  .member-emty-header p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #9c9c9c; }
+
+.upcoming {
+  display: block;
+  margin: 0;
+  padding: 30px 50px 10px;
+  background: #fff; }
+  .upcoming a {
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #bebebe; }
+
+.members, .members-empty {
+  background: #fff;
+  position: relative;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  margin-bottom: 50px; }
+  .members .form-time, .members-empty .form-time {
+    display: none; }
+  .members p, .members-empty p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    color: #565a5c;
+    margin: 0; }
+  .members form, .members-empty form {
+    text-align: center;
+    margin-top: 20px; }
+    .members form p, .members-empty form p {
+      vertical-align: middle;
+      display: none; }
+    .members form label, .members form input, .members-empty form label, .members-empty form input {
+      font-family: 'HelveticaNeue';
+      text-transform: none;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      font-style: normal;
+      font-stretch: normal;
+      color: #5a5a5a;
+      margin-right: 20px; }
+    .members form input, .members-empty form input {
+      padding: 7px 15px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      border: solid 1px #cccccc; }
+    .members form .member-picker, .members form button, .members-empty form .member-picker, .members-empty form button {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      color: #fff;
+      padding: 10px 45px !important;
+      -webkit-box-shadow: 1px 3px 0 #32959b !important;
+      box-shadow: 1px 3px 0 #32959b !important;
+      background-color: #3fb9c1 !important;
+      border-color: #3baeb6 !important;
+      border: 1px solid transparent !important;
+      -webkit-border-radius: 4px !important;
+      border-radius: 4px !important;
+      display: inline-block;
+      cursor: pointer; }
+
+.members-empty {
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee; }
+
+.member-top-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3a3a3a;
+  padding-right: 70px; }
+
+.member-header {
+  padding-bottom: 20px; }
+  .member-header .col-md-10 {
+    position: static; }
+  .member-header .unlime, .member-header .recurring {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #565a5c;
+    margin-right: 60px;
+    float: left; }
+  .member-header i {
+    margin-right: 10px; }
+  .member-header .col-md-2 {
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #565a5c; }
+  .member-header .member-price {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;
+    color: #3fb9c1; }
+
+.member-page-content {
+  padding: 40px 0; }
+  .member-page-content h3 {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    padding-bottom: 15px;
+    margin: 0;
+    color: #3a3a3a; }
+  .member-page-content img {
+    display: block;
+    height: auto;
+    width: 100%; }
+  .member-page-content a.title-member {
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #3fb9c1;
+    font-size: 14px; }
+  .member-page-content .col-in {
+    width: 80%;
+    margin-bottom: 40px; }
+  .member-page-content .pic {
+    width: 100%;
+    height: 160px;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px; }
+
+.member-page-location .locale {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  color: #3a3a3a !important; }
+
+.member-option h2 {
+  margin: 0;
+  padding: 20px 20px 0;
+  text-align: center; }
+  .member-option h2 span {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #33cccc;
+    display: inline-block;
+    padding-bottom: 13px; }
+
+.member-option .infoSection {
+  border-top: 1px solid #e5e5e5;
+  padding: 40px 20px 30px !important; }
+  .member-option .infoSection a {
+    font-size: 16px;
+    color: #565a5c !important;
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 700; }
+
+.member-option .member-link {
+  width: 90%;
+  float: none;
+  margin: 0 auto;
+  display: block !important; }
+
+.member-option .classCard {
+  padding-bottom: 30px; }
+
+/*
+membership RECURRING
+*/
+.member-recurring {
+  clear: both; }
+  .member-recurring h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #3a3a3a; }
+    .member-recurring h6:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 32px;
+      margin: 0 10px 0 30px;
+      background: url(../img/buttle.png) center no-repeat; }
+  .member-recurring p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #9c9c9c;
+    padding-bottom: 0;
+    margin: 0; }
+  .member-recurring span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    color: #3a3a3a; }
+  .member-recurring .date {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    color: #3a3a3a; }
+  .member-recurring .progress {
+    height: 9px; }
+  .member-recurring .visit {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    padding: 0; }
+    .member-recurring .visit i {
+      display: block;
+      float: right;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      color: #9c9c9c; }
+      .member-recurring .visit i:last-child {
+        font-size: 18px;
+        padding-right: 3px;
+        color: #3a3a3a; }
+
+.schedules-detail .member-recurring a.cancel {
+  width: auto;
+  margin: -3px 0 0 0;
+  float: right; }
+
+.schedules-detail .header-shchedule .form-group {
+  margin-bottom: 25px; }
+
+@media (max-width: 768px) {
+  .members {
+    padding: 20px; }
+  .member-top-header h1 {
+    margin: 0;
+    padding-right: 0; }
+  .member-top-header {
+    padding-bottom: 10px; }
+  .member-header .recurring, .member-header .unlime {
+    float: none;
+    margin-right: 0; }
+  .member-header .col-md-2 {
+    text-align: left;
+    padding-left: 40px; }
+  .member-page-content .col-in {
+    width: 100%; }
+  .member-page-content .pic {
+    height: auto; }
+  .member-page-content {
+    padding: 20px 0 0; }
+  .member-header .member-price {
+    position: static;
+    padding-left: 26px;
+    font-size: 20px; }
+  .members form input {
+    margin: 0 auto 10px;
+    width: 224px; }
+  .member-recurring h6:before {
+    margin: -6px 10px 0 0px; }
+  .schedules-detail .member-recurring a.cancel {
+    float: none;
+    width: 90%;
+    margin: 0 auto; } }

@@ -1,0 +1,57 @@
+/*---------GLOBAL----VARS-------------*/
+@font-face {
+	font-family:Helvetica, Arial, sans-serif;
+	src:url('../fonts/family/HelveticaNeueMed.ttf');
+}
+@font-face {
+	font-family:Helvetica, Arial, sans-serif;
+	src:url('../fonts/family/HelveticaNeuBold.ttf');
+}
+@font-face {
+	font-family:Helvetica, Arial, sans-serif;
+	src:url('../fonts/family/HelveticaNeueLight.ttf');
+}
+
+$mons: "Montserrat", Georgia, "Times New Roman", Times, serif;
+
+$blue: #33cccc;
+$dark: #565a5c;
+$border: #ddd;
+
+$helf: Helvetica, Arial, sans-serif;
+$helfB: Helvetica, Arial, sans-serif;
+$helfL: Helvetica, Arial, sans-serif;
+/*
+mixins
+*/
+@mixin fontC($w, $z, $c){
+	font-size: $z;
+	font-weight: $w;
+	color: $c;
+}
+@mixin after(){
+	content: ".";
+	clear: both;
+	font-size: 0;
+	width: 100%;
+	display: block;
+	height: 0;
+}
+@mixin bx(){
+	box-sizing: border-box;
+}
+@mixin br($x){
+	border-radius: $x;
+}
+@mixin wh($w, $h){
+	width: $w;
+	height: $h;
+}
+@mixin credit(){
+	margin-top: 40px;
+	padding: 40px;
+}
+/*--------GLOBAL-----VARS-------------*/
+section{
+	padding: 0;margin: 0;
+}

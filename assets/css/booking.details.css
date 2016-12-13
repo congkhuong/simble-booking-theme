@@ -1,0 +1,101 @@
+/*---------GLOBAL----VARS-------------*/
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueMed.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeuBold.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueLight.ttf"); }
+
+/*
+mixins
+*/
+/*--------GLOBAL-----VARS-------------*/
+section {
+  padding: 0;
+  margin: 0; }
+
+body {
+  /*tickets END*/ }
+  body #tickets .ticket {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    position: relative;
+    padding: 30px 30px 30px 140px; }
+    body #tickets .ticket .cut {
+      border-right: solid 1px #e2e2e2;
+      padding-left: 0; }
+  body #tickets h6 {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0;
+    font-style: normal;
+    color: #d5d5d5; }
+    body #tickets h6 i {
+      font-size: 14px; }
+  body #tickets label {
+    color: #33cccc !important;
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif; }
+  body #tickets h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700; }
+  body #tickets b {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 8px; }
+  body #tickets b.total {
+    font-size: 26px;
+    color: #33cccc; }
+  body #tickets span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding-bottom: 8px;
+    font-weight: normal;
+    color: #5f5f5f;
+    padding-left: 22px;
+    display: block; }
+  body #tickets .price-ticket {
+    padding-left: 0; }
+  body #tickets .fa {
+    font-size: 16px;
+    margin-right: 5px; }
+  body #tickets .ticket-icon {
+    width: 15px;
+    margin-bottom: -2px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    background: url(../img/ticket.svg); }
+  body #tickets .row:first-child {
+    margin-bottom: 20px; }
+  body #tickets .detail-wrapper .row {
+    margin-top: 60px; }
+    body #tickets .detail-wrapper .row label {
+      padding-left: 15px;
+      padding-bottom: 15px; }
+  body #tickets .detail-wrapper {
+    display: none; }
+
+/*body END*/
+@media (max-width: 769px) {
+  body #tickets .ticket {
+    padding-left: 15px; }
+  body #tickets .ticket .cut {
+    display: none; } }

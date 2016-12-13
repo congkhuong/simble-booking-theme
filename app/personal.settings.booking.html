@@ -1,0 +1,200 @@
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Family member info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.css">          
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navigation">
+            <a href="#" class="logo"><img src="img/logo.png"></a>
+            <div class="menu">
+                <div class="nav-parent">
+                    <a href="#" class="nav-user">
+                        <img src="./img/user.svg" alt="">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <p>
+                        <a href="#">My profile</a>
+                        <a href="#">Payments</a>
+                        <a href="#">Sign out</a>
+                    </p>
+                </div>
+                <a href="#" class="nav-booking">Booking <i>1</i></a>
+                <a href="#" class="nav-schedule">Schedules <i>1</i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container signup">
+        <ol class="breadcrumb">
+          <li><a href="#">Dream labs</a></li>
+          <li class="active">Personal settings</li>
+        </ol><!-- breadcrumb -->
+
+        <div class="content-signup">
+            <div class="header-memeber row">
+              <div class="col-md-2 active">
+                <div class="col-in">
+                  <img src="./img/user-avatar.png" alt="">
+                  <h6>Maria Adams</h6>
+                  <i>me</i>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="col-in">
+                  <img src="./img/user-avatar.png" alt="">
+                  <h6>Maria Adams</h6>
+                  <i>me</i>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="col-in">
+                  <a href="#" class="fa fa-plus-circle" aria-hidden="true"></a>
+                  <span>add family member</span>
+                </div>
+              </div>
+            </div><!-- header-memeber END-->
+
+            <h6 class="member-content-title row">
+              <a class="active">My profile</a>
+              <a>Payment information</a>
+            </h6>
+
+            <div class="content-review row member-content member-content-active">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="form-group row">
+                    <label class="control-label col-sm-3" for="email">Name on card</label>
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="email" placeholder="Cardholder name">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-sm-3" for="email">Card number</label>
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" id="email" placeholder="xxxx - xxxx - xxxx - xxxx">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="control-label col-sm-3" for="">Expiration date</label>
+                  <div class="col-md-3">
+                      <select class="form-control month-card">
+                        <option>16 - January</option>
+                      </select>
+                  </div>
+                  <div class="col-md-2">
+                      <select class="form-control data-card">
+                        <option>2016</option>
+                        <option>2020</option>
+                      </select>
+                  </div>
+                </div><!-- row END-->
+
+                <div class="form-group row">
+                  <label class="control-label col-sm-3" for="">CVV</label>
+                  <div class="col-sm-2">
+                    <input type="email" class="form-control" placeholder="123">
+                  </div>
+                </div><!-- row END-->
+                <div class="btns continue">
+                    <a class="btn btn-info">save</a>
+                </div>
+              </div><!-- payment-wrapper -->
+            </div><!-- content-review -->
+
+            <div class="content-review row member-content">
+                <div class="form-group row">
+                    <label class="control-label col-sm-3" for="email">Full name*</label>
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-sm-3 email-label" for="email">Contact information:</label>
+                    <div class="col-sm-9">
+                      <div class="row">
+                          <div class="form-group col-md-6">
+                            <label for="pwd" class="second-label">Email*</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="pwd" class="second-label">Phone number*</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Phone number">
+                          </div>
+                      </div><!-- row END-->
+                    </div><!-- col-sm-9 END-->
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-sm-3" for="email">Password*</label>
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" id="email" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="control-label col-sm-3" for="">Avatar</label>
+                  <div class="col-sm-8">
+
+                    <img src="" class="avatar-preview" alt="">
+                    <input type="hidden" class="member-avatar" name="avatar">
+
+                    <label for="avatar-signup" class="avatar-signup">
+                        <input type="file" id="avatar-signup" class="file-avatar">
+                        <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                        <small>Upload avatar</small>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-sm-3 email-label" for="email">Personal details:</label>
+                    <div class="col-sm-9">
+                      <div class="row">
+                          <div class="form-group col-md-6">
+                            <label for="pwd" class="second-label">Birthday:</label>
+                            <input type="text" class="form-control datepicker" id="pwd" placeholder="Birthday">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="email" class="second-label">Gender</label>
+                            <select class="form-control" id="sel1">
+                                <option value="">Gender</option>
+                            </select>
+                          </div>
+                      </div><!-- row END-->
+                    </div><!-- col-sm-9 END-->
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-sm-3" for="email">Address:</label>
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="email" placeholder="Address">
+                      <div class="btns continue">
+                          <a href="#" class="btn btn-info">save</a>
+                      </div>
+                    </div>
+                </div>
+            </div><!-- content-review -->
+
+        </div><!-- content-signup -->
+    </div><!-- container -->
+    
+    <!-- Cropper -->
+    <div class="popup" id="cropperModalNoAjax">
+        <div class="popup-in" role="document" >
+            <i class="close-myModal" id="close-staff-popup">&times;</i>
+            <div id="staffPopopIn"></div>
+            <div class="text-center">
+              <button class="btn btn-info" id="save-staff">save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/all.js"></script>
+</body>
+</html>

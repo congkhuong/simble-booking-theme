@@ -1,0 +1,128 @@
+@import "./global.scss";
+.member-content{
+	padding-top: 50px!important;
+	display: none;
+}
+.member-content-active{
+	display: block;
+}
+.content-signup{
+	.member-content-title{
+		margin: 0 -15px!important;
+		background: #fff;
+		margin-bottom: 40px;
+		padding: 40px 60px;
+		a{
+			font-family: $helf;
+			font-size: 13px;
+			font-weight: normal;
+			color: $dark!important;
+			cursor: pointer;
+			display: inline-block;
+			margin-right: 40px;
+			padding: 13px 30px;
+		}
+		.active{
+			font-family: $helfB;
+			background: $blue;
+			font-size: 13px;
+			font-weight: 700;
+			color: #fff!important;
+			border-radius: 3px;
+		}
+	}
+}
+
+.header-memeber{
+	overflow: hidden;
+	border-radius: 3px 3px 0 0;
+	border-bottom: 1px solid #e6e6e6;
+	img{
+		margin: 0 auto 6px;
+		border-radius: 50px;
+		width: 50px;
+		height: 50px;
+		transition: all ease .2s;
+		border: 3px solid transparent;
+		box-sizing: border-box;
+		display: block;
+	}
+	h6{
+		font-family: $helf;
+		font-size: 14px;
+		transition: all ease .2s;
+		font-weight: normal;
+		color: #565a5c;
+		padding-bottom: 5px;
+	}
+	i, span{
+		font-family: $helf;
+		font-size: 12px;
+		font-weight: 400;
+		color: #979797;
+		display: block;
+		font-style: normal;
+	}
+	span{
+		font-size: 14px;
+	}
+	a{
+		color: #e7e7e7!important;
+		font-size: 55px;
+		display: block;
+		margin-bottom: 5px;
+		transition: all ease .3s;
+		&:hover{
+			color:$blue!important;
+		}
+		&:active{
+			color:$blue!important;
+		}
+		&:focus{
+			color:$blue!important;
+		}
+	}
+	.col-in{
+		text-align: center;
+		padding: 20px 10px;
+		box-sizing: border-box;
+		height: 100%;
+	}
+	.col-md-2{
+		border-right: 1px solid #e6e6e6;
+		background: #f9f9f9;
+		height: 120px;
+		&:hover{
+			background: #fff;
+			img{
+				border: 3px solid  $blue;
+			}
+			h6{
+				color: $blue;
+			}
+		}
+	}
+	.active{
+		background: #fff;
+		img{
+			border: 3px solid  $blue;
+		}
+		h6{
+			color: $blue;
+		}
+	}
+}
+
+@media(max-width: 769px){
+	.content-signup .member-content-title{
+		margin: 0!important;
+		padding: 10px;
+		text-align: center;
+		a{
+			margin-bottom: 10px;
+		}
+	}
+	.member-content{
+		padding-top: 0px!important;
+	}
+}

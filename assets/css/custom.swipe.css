@@ -1,0 +1,160 @@
+/*---------GLOBAL----VARS-------------*/
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueMed.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeuBold.ttf"); }
+
+@font-face {
+  font-family: Helvetica, Arial, sans-serif;
+  src: url("../fonts/family/HelveticaNeueLight.ttf"); }
+
+/*
+mixins
+*/
+/*--------GLOBAL-----VARS-------------*/
+section {
+  padding: 0;
+  margin: 0; }
+
+/*
+count-wrapper
+*/
+.count-wrapper {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px; }
+  .count-wrapper h3 {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+    padding: 0; }
+  .count-wrapper h6 {
+    text-align: center; }
+    .count-wrapper h6 button {
+      margin-top: 40px;
+      padding: 10px 50px !important; }
+
+/*
+swipe
+*/
+.swiper-container {
+  height: 60px !important;
+  /*
+    buttons
+    */
+  /*
+    buttons END
+    */ }
+  .swiper-container .swiper-button-next, .swiper-container .swiper-button-prev {
+    margin-top: -28px !important; }
+    .swiper-container .swiper-button-next i, .swiper-container .swiper-button-prev i {
+      color: #33cccc;
+      font-size: 40px;
+      font-weight: 100; }
+  .swiper-container .swiper-button-next {
+    right: -10px; }
+  .swiper-container .swiper-button-prev {
+    left: 2px; }
+  .swiper-container .swiper-slide {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #33cccc;
+    font-weight: 700;
+    font-family: "HelveticaNeue";
+    font-size: 11px;
+    background: #f5f5f5;
+    display: block;
+    padding: 4px 0;
+    height: 47px;
+    cursor: pointer; }
+  .swiper-container span {
+    display: block !important;
+    clear: both !important;
+    color: #565a5c;
+    font-weight: 400;
+    font-size: 11px; }
+  .swiper-container .swiper-slide-active {
+    background: #878787;
+    color: #fff;
+    position: relative; }
+    .swiper-container .swiper-slide-active:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-left: -4px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #878787;
+      background: #fff; }
+    .swiper-container .swiper-slide-active span {
+      color: #fff; }
+
+.count-booking {
+  border: 1px solid #ddd;
+  border-radius: 5px; }
+  .count-booking ul {
+    padding: 0 15px;
+    margin: 0; }
+  .count-booking h4 {
+    display: block;
+    padding: 40px 20px 20px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #33cccc;
+    display: block;
+    text-transform: uppercase; }
+  .count-booking h6 {
+    margin: 0 auto -10px;
+    width: 190px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #33cccc;
+    background: #fff;
+    text-align: center; }
+  .count-booking li {
+    list-style-type: none;
+    display: block;
+    padding: 20px 5px;
+    border-bottom: 1px solid #ddd; }
+    .count-booking li:last-child {
+      border-bottom: none; }
+  .count-booking span.col-md-6 {
+    font-family: 'HelveticaNeue';
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #565a5c; }
+  .count-booking b, .count-booking i {
+    float: right;
+    display: block; }
+  .count-booking b {
+    font-size: 13px;
+    font-weight: 700;
+    color: #565a5c;
+    margin-right: 10px; }
+  .count-booking i {
+    color: #cccccc;
+    margin-top: -3px;
+    font-size: 25px;
+    cursor: pointer; }
+  .count-booking .fa-minus-circle {
+    margin-right: 5px;
+    display: none;
+    cursor: pointer; }
+  .count-booking .count-plus {
+    margin-right: 10px;
+    color: #33cccc;
+    display: none; }
+  .count-booking .active i {
+    color: #33cccc; }

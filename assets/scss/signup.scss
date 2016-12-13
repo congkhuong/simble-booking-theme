@@ -1,0 +1,574 @@
+@import "./global.scss";
+.form-for-content{
+	display: none;
+}
+.signup{
+	/*
+	reset
+	*/ 
+	h4, h6, p, b, ul, li, span, b, i,
+	{
+		padding: 0;
+		margin: 0;
+	}
+	/*
+	reset
+	*/
+	.sidebar-in, .content-signup{
+		background: #fff;
+	}
+	.sidebar-in{
+		padding: 30px 20px;
+		border: 1px solid #eee;
+		@include br(7px);
+		@include bx();
+		h4{
+			@include fontC(700, 16px, $blue);
+		}
+		h6, .session{
+			padding:15px 0 10px;
+			text-transform: uppercase;
+			@include fontC(700, 12px, $dark);
+		}
+		p{
+			padding-bottom: 10px;
+			@include fontC(400, 13px, #5f5f5f);
+		}
+		b{
+			float: right;
+			display: inline-block;
+			@include fontC(700, 16px, $dark);
+		}
+		.session, .total{
+			overflow: hidden;
+			border-top: 1px solid #ddd;
+		}
+		.session{
+			text-transform: none;
+			margin-top: 10px;
+			font-weight: 400;
+			font-size: 13px;
+			padding-bottom: 15px;
+		}
+		.total{
+			font-weight: 700;
+			font-size: 12px;
+			b{
+				color: $blue;
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+	.avatar-preview{
+		display: none;
+		float: left;
+		width: 100px;
+		height: auto;
+		margin-right: 10px;
+		border-radius: 3px;
+		border: 1px solid $border;
+	}
+}
+
+.content-signup{
+	.row{
+		background: #fff;
+	}
+}
+
+/*
+header-payment
+*/
+.header-payment{
+	@include br(5px 5px 0 0);
+	p{
+		text-align: center;
+		padding: 20px 0;
+		text-transform: uppercase;
+		@include fontC(700, 13px, $dark);
+		border-right: 1px solid $border;
+		border-bottom: 1px solid $border;
+		cursor: pointer;
+		&:last-child{
+			border-right:none;
+		}
+	}
+	i{
+		vertical-align: middle;
+		display: inline-block;
+		margin-right: 10px;
+		margin-top: -1px;
+		@include fontC(100, 25px, $border);
+	}
+	.active{
+		color: $blue;
+		i{
+			color: $blue;
+		}
+	}
+	.disable{
+		background: #f9f9f9;
+		color: #b9b9b9;
+	}
+}
+
+/*
+content-review
+*/
+.content-review{
+	padding: 0 60px;
+	@include bx();
+	h2{
+		@include fontC(700, 24px, $dark);
+		padding: 45px 0 25px;
+	}
+	h3, p{
+		text-align: center;
+	}
+	h3{
+		margin: 0;
+		margin-top: 35px;
+		font-family: $helfB;
+		padding-bottom: 10px;
+		font-weight: 700;
+		text-transform: none;
+	}
+	p{
+		font-family: $helf;
+		font-weight: 400;
+		padding-bottom: 10px;
+	}
+	hr{
+		border-color: $border;
+		margin-bottom: 30px;
+		margin-top: 50px;
+	}
+	.payment-method{
+		margin-top: 45px;
+		font-size: 20px;
+		text-transform: none;
+		font-weight: 700;
+	}
+	.col-part{
+		float: left;
+		@include wh(50%, auto);
+		&:last-child{
+			text-align: right;
+		}
+	}
+	.heaer-b{
+		padding: 0 45px;
+		&:after{@include after();}
+	}
+	.col-part{
+		&:first-child{
+			h4{
+				@include fontC(700, 14px, $dark);
+				padding-bottom: 15px;
+				font-family: $helfB;
+				&:before{
+					content: '';
+					display: inline-block;
+					float: left;
+					vertical-align: middle;
+					margin-right: 10px;
+					margin-top: -9px;
+					@include wh(20px, 27px);
+					background: url(../img/booking2.png) 0 0 no-repeat;
+				}
+			}
+			p{
+				text-align: left;
+				padding-left: 30px;
+				font-weight: 400;
+				font-size: 12px;
+				font-family: $helf;
+			}
+		}
+		&:last-child{
+			h4{
+				padding-bottom: 15px;
+				@include fontC(700, 16px, $blue);
+				font-family: $helfB;
+			}
+			label{
+				@include fontC(400, 14px, $dark);
+			}
+		}
+		a{
+			display: block;
+			font-family: $helf;
+			font-size: 12px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			color: #5f5f5f!important;
+			&:before{
+				content: "";
+				width: 14px;
+				height: 16px;
+				display: inline-block;
+				margin-right: 4px;
+				vertical-align: middle;
+				background: url(../img/Recurring.png) 0 0 no-repeat;
+			}
+		}
+	}
+	.session-block{
+		background: #eee;
+		padding: 45px 0;
+		@include bx();
+		margin-bottom: 20px;
+		.row{
+			padding-top: 40px;
+		}
+	}
+	.row{
+		background: transparent;
+		padding: 0 30px;
+	}
+	.form-group{
+		margin-bottom: 20px;
+		overflow: hidden;
+		label{
+			text-align: right;
+			padding-top: 8px;
+			text-transform: none;
+			@include fontC(400, 14px, $dark);
+		}
+	}
+	.checkbox, .radio{
+		margin: 0;
+	}
+	.footer-text{
+		padding: 60px 0 0 0;
+		p{
+			@include fontC(700, 12px, $dark);
+		}
+		label{
+			display: block;
+			text-align: center;
+		}
+	}
+	.over-text{
+		@include wh(100%, 150px);
+		overflow-y: auto;
+		padding: 10px 20px;
+		border-radius: 4px;
+		border: 1px solid $border;
+		margin-bottom: 20px;
+		p{
+			text-align: left;
+			@include fontC(100, 14px, $dark);
+			font-family: $helfL;
+		}
+	}
+	.btns{
+		width: 320px;
+		padding-bottom: 60px;
+		margin: 40px auto 0;
+		display: block;
+		.btn{
+			padding: 10px 40px!important;
+		}
+	}
+	.form-group .row{
+		margin: 0 -15px;
+		padding: 0;
+	}
+	.form-group span{
+		display: block;
+		@include fontC(400, 11px, rgba(137, 139, 142, 0.66));
+	}
+	.form-group .different{
+		padding-top: 29px;
+	}
+	input[type="file"]{
+		display: none;
+	}
+	.avatar-signup{
+		border: 2px dashed #d5d6d8;
+		display: inline-block;
+		width: 105px;
+		padding: 8px 25px;
+		cursor: pointer;
+		border-radius: 4px;
+		color: #d5d6d8!important;
+		box-sizing: border-box;
+		i{
+			display: block;
+			text-align: center;
+			font-size: 40px;
+			color: #d5d6d8;
+			margin-bottom: 10px;
+		}
+	}
+	.text{
+		text-align: left;
+		padding-top: 40px;
+		h4{
+			@include fontC(700, 20px, $dark);
+			padding-bottom: 10px;
+			text-transform: none;
+		}
+		p{
+			@include fontC(400, 13px, $dark);
+			text-align: left;
+			padding-bottom: 5px;
+			font-family: $helf;
+		}
+	}
+	/*
+	quick-login
+	*/
+	.quick-login{
+		margin: 50px 0 70px;
+		background: #eee;
+		padding:25px 30px;
+		@include bx();
+		text-align: left;
+		h6{
+			padding-bottom: 10px;
+			font-family: $helf;
+			font-weight: 700;
+			font-size: 14px;
+		}
+		p{
+			text-align: left;
+			padding-bottom: 5px;
+		}
+		a{
+			display: inline-block;
+			float: left;
+			border-radius: 5px;
+			padding: 11px 0;
+			width: 210px;
+			color: #fff!important;
+			background: #5972a5;
+			font-size: 13px;
+			font-weight: 700;
+			font-family: $helf;
+			margin-right: 20px;
+			margin-bottom: 10px;
+		}
+		i{
+			vertical-align: middle;
+			font-size: 18px;
+			display: inline-block;
+			margin-right: 10px;
+			margin-left: 15px;
+		}
+		.google{
+			background: #da5a4a;
+		}
+	}
+	.social{
+		margin-top: 15px;
+		overflow: hidden;
+	}
+	.members-signup{
+		img{
+			display: block;
+			margin: 0 auto 20px;
+		}
+		a{
+			display: block;
+			padding-bottom: 10px;
+			font-weight: 700;
+			text-align: center;
+		}
+	}
+	.continue{
+		text-align: center;
+		width: auto;
+	}
+	.checkout-title{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.credit-card, .credit-info{
+		@include credit();
+		h4{
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.row{
+			padding-top: 10px;
+		}
+	}
+	.credit-info{
+		h4{
+			margin-top: 0;
+			text-align: left;
+		}
+	}
+	/*
+	credit-info
+	*/
+	.card-block{
+		border: 1px solid $border;
+		@include br(5px);
+		width: 400px;
+		.header{
+			padding: 20px 20px 30px;
+			@include bx(); 
+		}
+		h5{
+			@include fontC(400, 14px, $dark);
+			padding-bottom: 10px;
+			font-family: $helf;
+			&:after{
+				@include after();
+			}
+			img{
+				float: right;
+				margin-top: -15px;
+				display: block;
+				@include wh(60px, 40px);
+			}
+		}
+		span{
+			display: block;
+			@include fontC(400, 15px, #cac7c7);
+		}
+		a{
+			display: block;
+			@include fontC(400, 13px, $blue);
+			text-align: center;
+			padding: 13px 0;
+			background: #eee;
+		}
+	}
+	.form-group label{
+		font-family: $helf;
+		font-size: 13px;
+		font-weight: 400;
+		color: #5f5f5f;
+	}
+	label.email-label{
+		padding-top: 35px!important;
+	}
+	label.second-label{
+		padding-bottom: 5px;
+	}
+}
+
+/*
+*
+*
+MEDIAS
+*
+*
+*/
+@media(max-width: 768px){
+	.content-review .col-part{
+		width: 100%;
+	}
+	.content-review{
+		padding: 0 15px;
+	}
+	.content-signup .row, .signup .content-signup, .signup .sidebar-in{
+		margin: 0;
+	}
+	.sidebar-simblebookign{
+		margin-bottom: 50px;
+	}
+	.content-review .heaer-b, .content-review .row{
+		padding: 0;
+	}
+	.content-review .row{
+		padding-top: 20px;
+	}
+	.header-payment p{
+		border-right: none;
+		background: #fff;
+	}
+	.header-payment{
+		background: #f9f9f9!important;
+		p.col-md-4{
+			width: 33%;
+			float: left;
+		}
+	}
+	.content-review h2{
+		padding: 10px 0;
+	}
+	.content-review .session-block{
+		padding: 45px 10px;
+	}
+	.content-review .col-part{
+		text-align: center;
+		h4, p, label{
+			text-align: center;
+			padding-left: 0;
+			display: block;
+		}
+	}
+	.content-review .btns{
+		width: auto;
+		text-align: center;
+		.btn{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.content-review .col-part:last-child{
+		h4, label, a{
+			padding-left: 30px;
+			text-align: left;
+		}
+	}
+	.content-review .footer-text{
+		padding: 20px 0 0;
+	}
+	.content-review .form-group .different{	
+		padding-top: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.content-review .form-group{
+		margin-bottom: 10px;	
+	}
+	.content-review .col-part:first-child h4{
+		padding-bottom: 3px;
+		text-align: left;
+	}
+	.content-review .form-group label{
+		width: 90%;
+		display: block;
+		margin: 0 auto 5px;
+		float: none;
+		text-align: center;
+	}
+	.signup .avatar-preview{
+		margin: 5px auto;
+		float: none;
+	}
+	.signup .avatar-preview{
+		width: 100%;
+	}
+	.content-review .btns .btn{
+		width: 90%;
+	}
+}
+
+@media(max-width: 480px){
+	.content-review .card-block{
+		width: auto;
+	}
+	.content-review .credit-card, .content-review .credit-info{
+		padding: 20px;
+	}
+	.content-review .card-block h5 img{
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+	.content-review .card-block h5{
+		line-height: 30px;
+	}
+}
+
